@@ -7,7 +7,7 @@ export default function LoginButton() {
     await supabase.auth.signInWithOAuth({
         provider: "google",
         options: {
-            redirectTo: "http://localhost:3000/dashboard",
+            redirectTo: "https://bookmarks-app-six-weld.vercel.app/dashboard",
         },
     })
 
